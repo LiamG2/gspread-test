@@ -16,7 +16,7 @@ sheet_1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4NFs_ITvGuD
 
 # sh = gc.open_by_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
 
-val = (sheet_1.sheet1.get('A1'))
+val = (sheet_1.sheet1.get('B3'))
 
 
 
