@@ -13,7 +13,6 @@ public_sheet = gApiKey.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4
 
 cellContents = (public_sheet.sheet1.get('B3'))
 
-
 st.title("Web App Title")
 
 st.write(cellContents)
