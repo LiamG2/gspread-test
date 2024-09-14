@@ -28,5 +28,5 @@ st.write(
     "Write stuff here . . ."
 )
 
-st.write(cellContents as str)
+st.write(cellContents)
 
