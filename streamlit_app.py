@@ -10,13 +10,13 @@ import gspread
 
 
 
-# gc = gspread.api_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
+gApiKey = gspread.api_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
 
-sheet_1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4NFs_ITvGuDNWMkODbS2_ZISG6SFjhx-Mg4dezr0/edit?usp=sharing')
+public_sheet = gApiKey.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4NFs_ITvGuDNWMkODbS2_ZISG6SFjhx-Mg4dezr0/edit?usp=sharing')
 
 # sh = gc.open_by_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
 
-val = (sheet_1.sheet1.get('B3'))
+cellContents = (public_sheet.sheet1.get('B3'))
 
 
 
@@ -28,5 +28,5 @@ st.write(
     "Write stuff here . . ."
 )
 
-st.write(val)
+st.write("cellContents")
 
