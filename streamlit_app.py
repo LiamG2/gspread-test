@@ -10,7 +10,7 @@ import gspread
 
 
 
-gc = gspread.api_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
+# gc = gspread.api_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
 
 sheet_1 = gc.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4NFs_ITvGuDNWMkODbS2_ZISG6SFjhx-Mg4dezr0/edit?usp=sharing')
 
