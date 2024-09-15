@@ -11,7 +11,7 @@ gApiKey = gspread.api_key("AIzaSyDpIvMkGb2WdHQC5xT1MHmefJZ7c3HRmlY")
 
 public_sheet = gApiKey.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4NFs_ITvGuDNWMkODbS2_ZISG6SFjhx-Mg4dezr0/edit?usp=sharing')
 
-cellContents = (public_sheet.sheet1.get('B3'))
+cellContents = str((public_sheet.sheet1.get('B3')))
 
 st.title("Web App Title")
 
