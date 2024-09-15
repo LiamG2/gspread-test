@@ -17,8 +17,9 @@ cellContents = str((public_sheet.sheet1.get('A5')))
 # remove unnecessary chars from both string's ends
 cellContents = cellContents.strip("[]'")
 
+# cellContents = cellContents.replace('\n', '')
 
-cellContents = cellContents.replace('\n', '')
+cellContents = cellContents.apply(lambda x: re.sub(r'\n', '', x))
 
 st.title("Web App Title")
 
