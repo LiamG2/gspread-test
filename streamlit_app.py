@@ -18,7 +18,7 @@ cellContents = str((public_sheet.sheet1.get('A5')))
 cellContents = cellContents.strip("[]'")
 
 
-cellContents = cellContents.str.replace('\n', '')
+cellContents = cellContents.replace('\n', '')
 
 st.title("Web App Tittle")
 
