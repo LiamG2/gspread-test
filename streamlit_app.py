@@ -20,6 +20,6 @@ cellContents = cellContents.strip("[]'")
 
 cellContents = cellContents.str.replace('\n', '')
 
-st.title("Web App Title")
+st.title("Web App Tittle")
 
 st.write(cellContents)
