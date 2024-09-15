@@ -1,6 +1,5 @@
 import streamlit as st
 import gspread
-import re
 
 # link to test GSheet >> https://docs.google.com/spreadsheets/d/1pkysi4rP3zsl20GWUp_HFg3CRg44BXdaoJDI0fnqIHA/edit?usp=sharing
 
@@ -17,6 +16,9 @@ cellContents = str((public_sheet.sheet1.get('A5')))
 
 # remove unnecessary chars from both string's ends
 cellContents = cellContents.strip("[]'")
+
+
+cellContents = cellContents.str.replace('\n', '')
 
 st.title("Web App Title")
 
