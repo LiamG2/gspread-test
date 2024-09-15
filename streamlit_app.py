@@ -22,6 +22,6 @@ cellContents = str((public_sheet.sheet1.get('A5')))
 # SEE >> https://stackoverflow.com/questions/42143302/how-can-i-remove-a-newline-character-in-a-string-in-python
 ## cellContents = cellContents.replace('\\n', '')
 
-st.title("Web App Title")
+st.title("Web App Titlle")
 
 st.write(cellContents)
