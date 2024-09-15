@@ -13,7 +13,7 @@ public_sheet = gApiKey.open_by_url('https://docs.google.com/spreadsheets/d/1WX-4
 
 cellContents = str((public_sheet.sheet1.get('B3')))
 
-cellContents = cellContents.strip('[]'')
+cellContents = cellContents.strip("[]'")
 
 st.title("Web App Title")
 
