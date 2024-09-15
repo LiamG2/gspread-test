@@ -16,11 +16,11 @@ public_sheet = gApiKey.open_by_url(
 cellContents = str((public_sheet.sheet1.get('A5')))
 
 # remove unnecessary chars [ ] ' from both string's ends
-cellContents = cellContents.strip("[]'")
+## cellContents = cellContents.strip("[]'")
 
 # remove substring '\n' from string - note the extra \ needed in \\n
 # SEE >> https://stackoverflow.com/questions/42143302/how-can-i-remove-a-newline-character-in-a-string-in-python
-cellContents = cellContents.replace('\\n', '')
+## cellContents = cellContents.replace('\\n', '')
 
 st.title("Web App Title")
 
