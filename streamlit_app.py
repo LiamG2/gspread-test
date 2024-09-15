@@ -19,7 +19,7 @@ cellContents = cellContents.strip("[]'")
 
 # cellContents = cellContents.replace('\n', '')
 
-cellContents = cellContents.apply(lambda x: re.sub(r'\n', '', x))
+cellContents = cellContents(lambda x: re.sub(r'\n', '', x))
 
 st.title("Web App Title")
 
