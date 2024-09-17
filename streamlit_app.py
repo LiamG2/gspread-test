@@ -38,6 +38,6 @@ cellContents = cellContents.strip("[]'")
 # SEE >> https://stackoverflow.com/questions/42143302/how-can-i-remove-a-newline-character-in-a-string-in-python
 cellContents = cellContents.replace('\\n', '')
 
-st.title("Web App Titlee")
+st.title("Web App Titleee")
 
 st.write(cellContents)
