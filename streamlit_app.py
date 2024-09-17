@@ -1,6 +1,6 @@
 import streamlit as st
 import gspread
-import time
+# import time
 
 # set sidebar initial state + dummy placeholder content
 st.set_page_config(
@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    with st.echo():
+    with st.write():
         st.write("This code will be printed to the sidebar.")
 
 
