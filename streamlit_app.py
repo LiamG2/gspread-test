@@ -2,10 +2,6 @@ import streamlit as st
 import gspread
 import time
 
-with st.sidebar:
-    with st.echo():
-        st.write("This code will be printed to the sidebar.")
-
 # set sidebar initial state + dummy placeholder content
 st.set_page_config(
     initial_sidebar_state="expanded",
@@ -16,7 +12,9 @@ st.set_page_config(
     }
 )
 
-
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
 
 
 # link to test GSheet >> https://docs.google.com/spreadsheets/d/1pkysi4rP3zsl20GWUp_HFg3CRg44BXdaoJDI0fnqIHA/edit?usp=sharing
