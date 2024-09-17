@@ -1,6 +1,17 @@
 import streamlit as st
 import gspread
 
+# set sidebar initial state + dummy placeholder content
+st.set_page_config(
+    initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help',
+        'Report a bug': "https://www.extremelycoolapp.com/bug",
+        'About': "# This is a header. This is an *extremely* cool app!"
+    }
+)
+
+
 # link to test GSheet >> https://docs.google.com/spreadsheets/d/1pkysi4rP3zsl20GWUp_HFg3CRg44BXdaoJDI0fnqIHA/edit?usp=sharing
 
 # Following instructions from >> https://docs.gspread.org/en/v6.1.2/oauth2.html#enable-api-access
